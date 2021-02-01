@@ -55,6 +55,7 @@
 .section1-img {
 	position: relative;
 	background-image: url(../img/img1.png);
+	background-position: center;
 	width: 1170px;
     height: 460px;
     padding: 291px 0 0 30px;
