@@ -12,6 +12,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .welcome {
 	background: #5851DB;
 }
@@ -160,6 +167,9 @@
 	margin-right: 103px;
 }
 .nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 }
 .nav-ul {
 	display: -webkit-box;
@@ -218,6 +228,11 @@
 .fa-search {
 	font-size: 36px;
 	color: #EE4036;
+}
+.burger {
+	font-size: 34px;
+	color: #3D58A6;
+	display: none;
 }
 
 /* Social Media Icon Hover effects*/
@@ -284,6 +299,18 @@
 	padding: 30px 98px 30px 98px;
 }
 .sec-boxes {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+    -ms-flex-line-pack:justify;
+        align-content:space-between;
+}
+.sec2-boxes {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -374,24 +401,57 @@
 	background-color: #E6E6E6;
 	padding: 30px 98px 30px 98px;
 }
+.sec4-title {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
 .sec4-text {
 	color: #000000;
 	font-family: 'Roboto-Regular';
 	font-size: 24px;
 	margin-bottom: 27px;
 }
+.sec4-boxes {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+    -ms-flex-line-pack:justify;
+        align-content:space-between;
+}
 .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	-webkit-box-align:start;
+	    -ms-flex-align:start;
+	        align-items:flex-start;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+    -ms-flex-line-pack:start;
+        align-content:flex-start;
+	width: 570px;
+/*    height: 225px;*/
 	padding: 11px 9px 15px 20px;
     background-color: #F2F2F2
 }
-.container-h3 {
+.container-title {
 	margin-bottom: 12px;
+}
+.container-h3 {
 	color: #3D58A6;
 	font-size: 22px;
 	font-family: 'Roboto-Regular';
 }
 .container-icon1 {
 	margin-right: 60px;
+	margin-bottom: 35px;
 }
 .container-content {
 	display: -webkit-box;
@@ -413,13 +473,15 @@
 	font-family: 'Roboto-Regular';
 }
 .div-read {
-	display: -webkit-box;
+/*	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
 	-webkit-box-pack:end;
 	    -ms-flex-pack:end;
-	        justify-content:flex-end; 
-	padding-top: 8px;;
+	        justify-content:flex-end; */
+    position: absolute;
+	right: 8px;
+	top: 191px;
+/*	padding-top: 8px;;*/
 }
 .read-more {
 	color: #3D58A6;
@@ -451,7 +513,7 @@
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
     background: -o-linear-gradient(top, white, black);
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
     background: linear-gradient(to bottom, white, black);
 }
